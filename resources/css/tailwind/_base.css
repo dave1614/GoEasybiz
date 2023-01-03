@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+
+@layer components {
+    .my-custom-style {
+        /* border: 0; */
+        /* border-bottom: 2px; */
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-image-source: linear-gradient(100deg, rgba(0, 97, 124,0.8) 0%, rgba(0,235,191, 0.8) 60%);
+        border-width: 2px;
+        border-image-slice: 1;
+        
+        
+    }
+
+    .login-btn-style {
+        
+        border-image-source: linear-gradient(100deg, rgba(0, 97, 124,0.8) 0%, rgba(0,235,191, 0.8) 60%);
+        border-width: 2px;
+        border-image-slice: 1;
+        background: white;
+        border-radius: 5px;
+        
+    }
+
+    .inputfile+label{
+        color: #f1e5e6;
+        background-color: #d3394c;
+        max-width: 80%;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        padding: 0.625rem 1.25rem
+    }
+
+    .app-form-custom-style {
+        /* border: 0; */
+        /* border-bottom: 2px; */
+        /* border-top: 0;
+        border-left: 0;
+        border-right: 0; */
+        border-radius: 2px;
+        border-image-source: linear-gradient(100deg, rgba(0, 97, 124,0.8) 0%, rgba(0,235,191, 0.8) 60%);
+        border-width: 2px;
+        border-image-slice: 1;
+        
+        
+    }
+    .cable-plans-card.display {
+        cursor: unset;
+
+    }
+
+    
+    .contact-custom-style {
+        /* border: 0; */
+        /* border-bottom: 2px; */
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-image-source: linear-gradient(100deg, rgba(29, 78, 216,0.8) 0%, rgba(29, 78, 216,0.8) 60%);
+        border-width: 2px;
+        border-image-slice: 1;
+        
+        
+    }
+    
+}
+
+
+
+.contact-form-input {
+    @apply border-t-0 border-r-0 border-l-0 border-b-[2px] border-gray-300 focus:contact-custom-style outline-0 focus:outline-none px-2 py-2 text-black bg-white text-sm w-full focus:ring-0 font-bold;
+}
+
+.contact-form-label {
+    @apply block text-blue-700 text-xs font-bold mt-2;
+}
+
+
+.main-page-btn {
+    @apply py-3 px-6 text-xl bg-gradient-to-r font-bold text-[#F8F8F8] my-2 mt-4 transition-all ease-in-out duration-75 shadow-md rounded-md;
+}
+
+button,
+.gradient2{
+    @apply from-blue-400 to-primary;
+}
+
+.voucher_type-card {
+    
+    @apply cursor-pointer transition-all duration-75 ease-in-out;
+}
+
+.voucher_type-card,
+.voucher_type-card .card-body,
+.voucher_type-card img {
+    
+    @apply p-0;
+}
+
+.voucher_type-card.selected {
+    
+    @apply p-[5px] border-[5px] border-primary;
+}
+
+.voucher_type-card img {
+    
+    @apply h-full;
+}
+
+.voucher_type-card p {
+
+    @apply font-bold text-sm text-black;
+}
+
+.cable-plans-card {
+    
+    @apply shadow-md cursor-pointer my-5 py-4 px-2 dark:bg-slate-800;
+}
+
+.cable-plans-card span {
+   
+    @apply font-bold text-[13px] ;
+}
+
+
+
+.cable-plans-card.selected {
+    
+    @apply border-[2px] border-solid border-primary;
+}
+
+
+
+.operator-card {
+    
+    @apply cursor-pointer transition-all duration-75 ease-in-out;
+}
+
+.operator-card,
+.operator-card .card-body,
+.operator-card img {
+    @apply p-0;
+}
+
+.operator-card.selected {
+    
+    @apply p-[5px] border-[3px] border-solid border-primary dark:border-[5px];
+}
+
+.operator-card img {
+    @apply h-full;
+}
+
+.disco-card span{
+    @apply text-sm font-bold text-black ;
+}
+
+.disco-card {
+    @apply cursor-pointer transition-all duration-75 ease-in-out w-full;
+}
+
+.disco-card,
+.disco-card .card-body,
+.disco-card img {
+    
+    @apply p-0;
+}
+
+.disco-card.selected {
+    @apply p-[5px] border-[3px] border-solid border-primary;
+}
+
+.disco-card img {
+    
+    @apply h-full w-full;
+}
+
+.ftb {
+    @apply bg-gradient-to-r from-primary to-secondary cursor-pointer fixed bottom-0 right-0 rounded fill-white outline-none overflow-hidden mb-[24px] mr-[24px] text-center z-[40] shadow-md h-[56px] w-[94px] transition-all ease-in-out duration-200;
+}
+
+.ftb div {
+
+    @apply inline-block h-[24px] absolute top-[16px] left-[16px] w-[24px];
+}
+
+.data-plans-card {  
+
+    @apply my-4 px-2 py-4 shadow-md cursor-pointer transition-all ease-in-out duration-75 bg-white dark:bg-slate-800;
+}
+
+.data-plans-card span {
+    @apply font-bold text-[13px] text-black dark:text-white;
+}
+
+
+
+.data-plans-card.selected {
+    /*padding: 5px;*/
+    /* border: 2px solid #9c27b0; */
+    @apply border-[3px] border-solid border-primary
+}
+
+.amount-card.selected {
+    /* border: 2px solid #9c27b0; */
+    @apply p-1 border-[3px] border-primary;
+}
+
+.amount-card {
+    @apply mx-2 my-3 py-3 cursor-pointer transition-all duration-75 ease-in-out;
+
+}
+
+.amount-card span {
+    
+    @apply text-sm font-bold text-black;
+}
+
+.network-card.selected{
+    /* border: 2px solid #9c27b0; */
+    @apply p-1 border-[4px] border-primary ;
+}
+
+.card{
+    @apply bg-white  rounded-md shadow-md;
+}
+
+.app-form-button{
+    @apply  dark:from-slate-800 dark:to-slate-800 dark:border-[2px] dark:border-gray-300 block w-full uppercase py-3 bg-gradient-to-r from-primary to-secondary text-sm font-semibold text-[#F8F8F8] rounded my-2 mt-4 hover:text-black hover:login-btn-style transition-all ease-in-out duration-75 px-3;
+}
+
+.app-form-error {
+    @apply text-red-500 text-xs italic font-semibold;
+}
+
+.app-form-input-error {
+    @apply  dark:text-white rounded-[2px] border-[2px] focus:app-form-custom-style border-red-500 outline-0 focus:outline-none  px-2 py-2 text-black dark:bg-slate-800  text-sm  w-full  focus:ring-0  font-bold;
+}
+
+
+.app-form-input{
+    @apply  dark:text-white rounded-[2px] border-[2px] border-gray-300 focus:app-form-custom-style outline-0 focus:outline-none  px-2 py-2 text-black dark:bg-slate-800  text-sm  w-full  focus:ring-0  font-bold;
+}
+
+.fba{
+    @apply bg-gradient-to-r from-primary to-secondary cursor-pointer fixed bottom-0 right-0 rounded-[50%] fill-white outline-none overflow-hidden mb-[24px] mr-[24px] text-center z-[4000] shadow-md h-[56px] w-[56px] transition-all ease-in-out duration-200;
+}
+
+.fba div {
+
+    @apply inline-block h-[24px] absolute top-[16px] left-[16px] w-[24px];
+}
+
+
+
+.login-button{
+    @apply  block w-full uppercase py-2 bg-gradient-to-r from-primary to-secondary text-sm font-semibold text-[#F8F8F8] rounded my-2 mt-4 hover:text-black hover:login-btn-style transition-all ease-in-out duration-75 px-3;
+}
+.login-form-input{
+    @apply border-t-0 border-r-0 border-l-0 border-b-[2px] border-gray-300 focus:my-custom-style outline-0 focus:outline-none  px-2 py-2 text-black bg-white  text-sm  w-full  focus:ring-0  font-bold;
+}
+
+.login-form-input-error {
+    @apply border-t-0 border-r-0 border-l-0 border-b-[2px] border-red-400 outline-0 focus:outline-none px-2 py-2 text-black bg-white text-sm w-full focus:ring-0 font-bold;
+}
+
+.login-form-error{
+    @apply text-red-400 text-sm italic font-semibold;
+}
+
+.login-form-label{
+    @apply block text-gray-500 text-xs font-bold mt-2; 
+}
+
+.login-checkbox-label {
+    @apply text-sm font-semibold inline-block ml-2 mr-1 cursor-pointer;
+}
+.login-checkbox {
+    @apply border-gray-500 text-primary focus:ring-0 rounded-sm w-4 h-4 transition-all ease-in-out duration-200;
+}
